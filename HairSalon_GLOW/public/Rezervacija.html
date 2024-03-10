@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rezervacija</title>
+        <link rel="stylesheet" href="Pocetna.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <script type="module" src="RezervacijaPodaci.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="Pocetna.html"><img src="Slike/Logo.jpg" alt="Logo" id="Logo"></a>
+                <ul>               
+                    <li><a href="ONama.html">O nama</a></li>
+                    <li><a href="Zakazivanje.html">Zakazivanje</a></li>
+                    <li><a href="PreporuceniProizvodi.html">Preporučeni proizvodi</a></li>
+                    <li><a href="Saveti.html">Saveti</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <script type="module" src="proveraKorisnika.js"></script>
+        </header>
+        <div id="kontejner">
+            <div id="tretmaniZaposleni">
+                <div id="tretmani">
+                </div>
+                <div id="zaposleni">
+                    <label>Odaberite zaposlenog:<br></label>
+                    <select id="dpbZaposleni">
+                      </select>
+                </div>
+                <div id="termini">
+                    <p>Dostupni termini</p>
+                    <div id="dostupniTermini">
+                    </div>
+                </div>
+            </div>
+            <div id="datumTermini">
+                <div id="datum"> 
+                    <div class="wrapper">
+                        <header>
+                            <p class="trenutniDatum"></p>
+                            <div class="ikone">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                        </header>
+                        <div class="kalendar">
+                            <ul class="nedelje">
+                            <li>Ned</li>
+                            <li>Pon</li>
+                            <li>Uto</li>
+                            <li>Sre</li>
+                            <li>Cet</li>
+                            <li>Pet</li>
+                            <li>Sub</li>
+                            </ul>
+                            <ul class="dani"></ul>
+                        </div>
+                    </div>
+                </div>
+                <button id="rezervisi">Rezerviši</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="Levi">
+                <table>
+                    <tr>
+                        <td><img src="Slike/Logo.jpg" alt="Logo"></td>
+                        <td rowspan="2">
+                            <span>
+                                GLOW<br />
+                                Frizerski salon
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>
+                                Copyright @ 2022.
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="Desni">
+                <address>
+                    Vlasnik: <a href="mailto:dosicdusica2@gmail.com">Dušica Došič</a><br>
+                    Posetite nas:<br>
+                    Miše Dimtrijevića 13<br>
+                    21000, Novi Sad<br>
+                </address>
+            </div>
+        </footer>
+        <script type="module" src="Rezervacija.js"></script>
+    </body>
+</html>
